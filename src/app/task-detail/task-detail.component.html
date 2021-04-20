@@ -7,11 +7,12 @@
     </div>
     <div>
         <label for="task-description">Description: </label>
-        <input id="task-description" [(ngModel)]="task.description" placeholder="description">
+        <input id="task-description" [(ngModel)]="task.description" placeholder="description" style="width: 520px">
     </div>
     <div>
         <label for="task-description">Worth: </label>
         <input id="task-worth" [(ngModel)]="task.worth" placeholder="worth">
     </div>
     <button (click)="goBack()">Go back</button>
+    <button (click)="goBack()">Save</button>
 </div>

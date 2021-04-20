@@ -33,4 +33,8 @@ export class TaskDetailComponent implements OnInit {
     this.location.back();
   }
 
+  saveTask(): void {
+    return; // TO-DO
+  }
+
 }

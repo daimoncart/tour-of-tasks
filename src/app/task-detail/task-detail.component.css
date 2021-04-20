@@ -5,9 +5,11 @@ label {
   input {
     font-size: 1em;
     padding: .5rem;
+    margin-bottom: 3px;
   }
   button {
     margin-top: 20px;
+    margin-right: 3px;
     background-color: #eee;
     padding: 1rem;
     border-radius: 4px;
