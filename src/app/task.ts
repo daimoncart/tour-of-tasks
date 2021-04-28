@@ -3,4 +3,5 @@ export interface Task {
     name: String;
     description: String;
     worth: number;
+    randomPriority: number
 }
