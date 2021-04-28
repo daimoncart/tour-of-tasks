@@ -40,7 +40,7 @@ export const TASKS: Task[] =
       },
       {
         name: 'Handstand',
-        id: 7,
+        id: 74534563456,
         description: 'Learn how to do a handstand and walk 30m on hands',
         worth: 5
       },
