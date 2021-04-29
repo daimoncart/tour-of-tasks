@@ -8,13 +8,15 @@ import { TaskDetailComponent } from './task-detail/task-detail.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NewTaskComponent } from './new-task/new-task.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TasksComponent,
     TaskDetailComponent,
-    DashboardComponent
+    DashboardComponent,
+    NewTaskComponent
   ],
   imports: [
     BrowserModule,

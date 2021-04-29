@@ -3,7 +3,7 @@ import { Task } from './task';
 export const TASKS: Task[] = 
 [
     {
-        name: 'Hygienist',
+        name: 'Hygienist0000',
         id: 1,
         description: 'Get your teeth cleaned at hygienist`s',
         worth: 3,
