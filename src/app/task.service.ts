@@ -27,8 +27,12 @@ export class TaskService {
 
   getTask(id: number): Observable<Task> {
     // const task = TASKS.find(h => h.id === id) as Task;
-    this.getTasks().subscribe(res => this.tasks=res as Task[]);    
-    return of(this.tasks.find(x => x.id === id)!);
+    // this.getTasks().subscribe(res => this.tasks=res as Task[]);    
+    // return of(this.tasks.find(x => x.id === id)!);
+    const url = `${this.taskUrl}/${id}`;
+    return this.http.get<Task>(url).pipe(
+      catchError(this.handleError<Task>(`getTask id=${id}`))
+  );
   }
 
   updateTask(task: Task): Observable<any> {
