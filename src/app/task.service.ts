@@ -43,6 +43,11 @@ export class TaskService {
     );
   }
 
+  deleteTask(taskId: number): Observable<any> {
+    return this.http.delete(this.taskUrl+taskId, this.httpOptions).pipe(
+      catchError(this.handleError<any>('saveTask'))
+    );
+  }
 
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {

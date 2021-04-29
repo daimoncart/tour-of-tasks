@@ -38,4 +38,9 @@ export class TaskDetailComponent implements OnInit {
     .subscribe(() => this.goBack());
   }
 
+  delete(): void {
+    this.taskService.deleteTask(this.task!.id!)
+    .subscribe(() => this.goBack());
+  }
+
 }
